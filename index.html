@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organograma</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        .card {
+            border: 2px solid #545454;
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 15px;
+            text-align: center;
+            width: 220px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            border-radius: 50%;
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .role {
+            font-weight: bold;
+            color: #c0392b;
+            margin-bottom: 5px;
+        }
+        .team {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .team h3 {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .line {
+            position: relative;
+            background-color: #f1c40f;
+        }
+        .line.vertical {
+            width: 2px;
+            height: 50px;
+        }
+        .line.horizontal {
+            height: 2px;
+            width: 50px;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .teams {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column;
+                align-items: center;
+            }
+            .card {
+                width: 180px;
+            }
+            .teams {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://via.placeholder.com/90" alt="Foto Coordenador">
+            <div class="role">Coordenador</div>
+            <div>Cerqueira</div>
+        </div>
+        <div class="line vertical"></div>
+        <div class="row">
+            <div class="card">
+                <img src="http://localhost/organograma/fotos/2.jpg" alt="Foto Pablo">
+                <div class="role">Supervisor</div>
+                <div>Pablo Borges</div>
+            </div>
+        </div>
+        <div class="line vertical"></div>
+        <div class="row">
+            <div class="card">
+                <img src="https://via.placeholder.com/90" alt="Foto Ricardo">
+                <div class="role">Auxiliar de Supervisão</div>
+                <div>Ricardo Daniel</div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/90" alt="Foto Vaga">
+                <div class="role">Auxiliar de Supervisão</div>
+                <div>Vaga</div>
+            </div>
+        </div>
+        <div class="line vertical"></div>
+        <div class="teams">
+            <div class="team">
+                <h3>Equipe 02</h3>
+                <div class="row">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/90" alt="Foto Eliel">
+                        <div>Eliel Ribeiro Machado</div>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/90" alt="Foto William">
+                        <div>William Cruz da Rosa</div>
+                    </div>
+                </div>
+            </div>
+            <div class="team">
+                <h3>Equipe 04</h3>
+                <div class="row">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/90" alt="Foto Marcos Aurélio">
+                        <div>Marcos Aurélio Bueno Junior</div>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/90" alt="Foto Marcos Wesley">
+                        <div>Marcos Wesley Alves Rodrigues</div>
+                    </div>
+                </div>
+            </div>
+            <div class="team">
+                <h3>Equipe 08</h3>
+                <div class="row">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/90" alt="Foto João Vitor">
+                        <div>João Vitor Lopes da Silva</div>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/90" alt="Foto Vaga">
+                        <div>Vaga</div>
+                    </div>
+                </div>
+            </div>
+            <div class="team">
+                <h3>Equipe 11</h3>
+                <div class="row">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/90" alt="Foto Helson">
+                        <div>Helson de Oliveira Fritscher</div>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/90" alt="Foto Ismael">
+                        <div>Ismael Carneiro da Rosa</div>
+                    </div>
+                </div>
+            </div>
+            <div class="team">
+                <h3>Equipe 14</h3>
+                <div class="row">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/90" alt="Foto Carlos">
+                        <div>Carlos Augusto Garcia de Andrade</div>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/90" alt="Foto Igor">
+                        <div>Igor Gomes Martins</div>
+                    </div>
+                </div>
+            </div>
+            <div class="team">
+                <h3>Equipe 16</h3>
+                <div class="row">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/90" alt="Foto Victor">
+                        <div>Victor da Silva Lyra</div>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/90" alt="Foto Marcelo">
+                        <div>Marcelo Machado Munhoz Junior (Trainee)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="team">
+                <h3>Equipe 17</h3>
+                <div class="row">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/90" alt="Foto Djonatan">
+                        <div>Djonatan Pereira Rodrigues Wedy (Trainee)</div>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/90" alt="Foto Diego">
+                        <div>Diego Malaquias Nascimento</div>
+                    </div>
+                </div>
+            </div>
+			<div class="team">
+                <h3>Equipe Triunfo</h3>
+                <div class="row">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/90" alt="Foto Djonatan">
+                        <div>Davi Lamb</div>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/90" alt="Foto Diego">
+                        <div>Renato Raniele Barreto Freitas</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
